@@ -364,7 +364,7 @@ h6,
 #hero .img-hero .carousel-inner .carousel-item img {
   border-radius: 10px; 
   width: 100%;
-  min-height: 300px;
+  min-height: 250px;
   min-width: 330px;
   background-size: cover;
   background-position: center;
@@ -394,14 +394,14 @@ h6,
 @media (max-width: 768px) {
   #hero h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 36px;
     margin: 10px 0 10px 0;
   }
 
   #hero h2 {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 10px 0 0;
     line-height: 24px;
   }
@@ -447,7 +447,7 @@ h6,
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 60px;
+  padding: 60px 0;
   overflow: hidden;
 }
 
