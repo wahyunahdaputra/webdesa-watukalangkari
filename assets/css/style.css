@@ -836,8 +836,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 90%;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
