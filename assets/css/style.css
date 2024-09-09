@@ -390,6 +390,11 @@ h6,
 }
 
 @media (max-width: 768px) {
+  #hero .img-hero .carousel-inner .carousel-item img {
+    min-height: 300px;
+    min-width: 330px;
+  }
+  
   #hero h1 {
     text-align: center;
     font-size: 28px;
