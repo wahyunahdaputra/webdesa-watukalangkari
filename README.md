@@ -11,7 +11,6 @@ Ini adalah repository untuk pengembangan website resmi **Desa Watukalangkari**, 
 - **HTML/CSS**: Untuk struktur dan tampilan website.
 - **JavaScript**: Menambah interaktivitas pada website.
 - **Bootstrap**: Untuk memastikan tampilan yang responsif di berbagai perangkat.
-- **Leaflet.js**: Untuk menampilkan peta lokasi desa secara interaktif (jika diperlukan).
   
 ## Link Website
 
