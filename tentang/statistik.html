@@ -27,6 +27,93 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
+  <style>
+
+    table {
+        font-size: 1.0rem;
+    }
+
+    table th, td {
+        padding: 0.8em !important;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    table thead th {
+      text-align: center;
+        color: #f8f9fa!important;
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    table th:nth-child(n+2),
+    table td:nth-child(n+2) {
+        text-align: center;
+    }
+
+    .statistik-image-wrapper {
+      gap: 1.5em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .statistik-image-item {
+      width: 200px;
+      height: 250px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 10px;
+      justify-content: center;
+      transition: all .3s;
+    }
+
+    .statistik-image-text {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.0rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+
+    .statistik-noimage-wrapper {
+      gap: 1.5em;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .statistik-noimage-item {
+      width: 170px;
+      height: 160px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      transition: all .3s;
+    }
+
+    .statistik-noimage-text {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+    }
+
+    .statistik-image-item:hover, .statistik-noimage-item:hover {
+      background-color: #e4e8ec !important;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    @media (max-width: 768px) {
+      
+    }
+
+</style>
+
 </head>
 
 <body>
@@ -97,48 +184,380 @@
           <p>Data Statistik Desa Watukalangkari</p>
         </div>
 
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon">
-                <img src="../assets/img/pemerintahan/lpm.jpg" alt="">
+          <div class="shadow-sm py-5 px-4 mb-5" style="background-color: #FFECEA; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <div class="flex align-items-center">
+                  <img class="me-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/Demografi.svg" alt="" 
+                  style="width: 50px; filter: invert(0.16) sepia(1) saturate(55) hue-rotate(340deg);">
+                  <span class="fs-4" style="font-weight: 700;">Demografi</span>
+                </div>
               </div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon">
-                <img src="../assets/img/pemerintahan/lpm.jpg" alt="">
+              <div class="col-lg-4 mb-4">
+                <div class="table-responsive">
+                  <table class="table table-hover bg-white shadow-sm">
+                    <thead>
+                        <tr class="text-white fw-bold shadow-sm" style="background-color: #E74C3C;">
+                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                <tr>
+                          <td>Laki-laki</td>
+                          <td>162</td>
+                        </tr>
+                                                <tr>
+                          <td>Perempuan</td>
+                          <td>161</td>
+                        </tr>
+                                              <tr>
+                        <td>Total</td>
+                        <td>323</td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
               </div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+              <div class="col-lg-8 px-lg-5">
+                <div class="statistik-image-wrapper">
+                  
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">162</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_penduduk/17025135766289.png" style="height: 100px; object-fit: contain">
+                      <div class="statistik-image-text">Laki-laki</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">161</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_penduduk/17025135762603.png" style="height: 100px; object-fit: contain">
+                      <div class="statistik-image-text">Perempuan</div>
+                    </div>
+                                      
+                  <div class="statistik-image-item shadow bg-white py-4">
+                    <div class="fs-2 mb-3" style="font-weight: 700;">
+                      323
+                    </div>
+                    <img class="mb-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/total_penduduk.svg" style="height: 100px; object-fit: contain">
+                    <div class="statistik-image-text">Total</div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon">
-                <img src="../assets/img/pemerintahan/lpm.jpg" alt="">
+          <div class="shadow-sm py-5 px-4 mb-5" style="background-color: #FFECEA; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <div class="flex align-items-center">
+                  <img class="me-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/agama.svg" alt="" 
+                  style="width: 55px; filter: invert(0.16) sepia(1) saturate(55) hue-rotate(340deg);">
+                  <span class="fs-4" style="font-weight: 700;">Agama</span>
+                </div>
               </div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+              <div class="col-lg-4 mb-4">
+                <div class="table-responsive">
+                  <table class="table table-hover bg-white shadow-sm">
+                    <thead>
+                        <tr class="text-white fw-bold shadow-sm" style="background-color: #E74C3C;">
+                            <th scope="col">Agama</th>
+                            <th scope="col">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                <tr>
+                          <td>Islam</td>
+                          <td>323</td>
+                        </tr>
+                                                <tr>
+                          <td>katolik</td>
+                          <td>0</td>
+                        </tr>
+                                                <tr>
+                          <td>Protestan</td>
+                          <td>0</td>
+                        </tr>
+                                                <tr>
+                          <td>Buddha</td>
+                          <td>0</td>
+                        </tr>
+                                                <tr>
+                          <td>Hindu</td>
+                          <td>0</td>
+                        </tr>
+                                                <tr>
+                          <td>Konghucu</td>
+                          <td>0</td>
+                        </tr>
+                                            </tbody>
+                </table>
+                </div>
+              </div>
+              <div class="col-lg-8 px-lg-5">
+                <div class="statistik-image-wrapper">
+                  
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">323</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/17025142166680.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Islam</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/17025142162427.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">katolik</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/17025142164471.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Protestan</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/17025142165959.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Buddha</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/17025142164478.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Hindu</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_agama/1702514216742.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Konghucu</div>
+                    </div>
+                                      
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon">
-                <img src="../assets/img/pemerintahan/lpm.jpg" alt="">
+          <div class="shadow-sm py-5 px-4 mb-5" style="background-color: #FFECEA; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <div class="flex align-items-center">
+                  <img class="me-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/pendidikan.svg" alt="" 
+                  style="width: 55px; filter: invert(0.16) sepia(1) saturate(55) hue-rotate(340deg);">
+                  <span class="fs-4" style="font-weight: 700;">Pendidikan</span>
+                </div>
               </div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
+              <div class="col-lg-4 mb-4">
+                <div class="table-responsive">
+                  <table class="table table-hover bg-white shadow-sm">
+                    <thead>
+                        <tr class="text-white fw-bold shadow-sm" style="background-color: #E74C3C;">
+                            <th scope="col">Jenis Pendidikan</th>
+                            <th scope="col">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                <tr>
+                          <td>TK/PAUD</td>
+                          <td>10</td>
+                        </tr>
+                                                <tr>
+                          <td>Sekolah Dasar</td>
+                          <td>78</td>
+                        </tr>
+                                                <tr>
+                          <td>Sekolah Menengah Pertama</td>
+                          <td>79</td>
+                        </tr>
+                                                <tr>
+                          <td>Sekolah Menengah Atas</td>
+                          <td>127</td>
+                        </tr>
+                                                <tr>
+                          <td>Sarjana</td>
+                          <td>30</td>
+                        </tr>
+                                                <tr>
+                          <td>Magister</td>
+                          <td>0</td>
+                        </tr>
+                                                <tr>
+                          <td>Doktor</td>
+                          <td>0</td>
+                        </tr>
+                                            </tbody>
+                </table>
+                </div>
+              </div>
+              <div class="col-lg-8 px-lg-5">
+                <div class="statistik-image-wrapper">
+                  
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">10</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025167462209.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">TK/PAUD</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">78</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025167748354.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Sekolah Dasar</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">79</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025168027985.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Sekolah Menengah Pertama</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">127</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025168262785.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Sekolah Menengah Atas</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">30</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025171046900.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Sarjana</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025171273792.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Magister</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pendidikan/17025171548768.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Doktor</div>
+                    </div>
+                                      
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
 
-      </div>
+          <div class="shadow-sm py-5 px-4 mb-5" style="background-color: #FFECEA; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <div class="flex align-items-center">
+                  <img class="me-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/pekerjaan.svg" alt="" 
+                  style="width: 55px; filter: invert(0.16) sepia(1) saturate(55) hue-rotate(340deg);">
+                  <span class="fs-4" style="font-weight: 700;">Pekerjaan</span>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="table-responsive">
+                  <table class="table table-hover bg-white shadow-sm">
+                    <thead>
+                        <tr class="text-white fw-bold shadow-sm" style="background-color: #E74C3C;">
+                            <th scope="col">Jenis Pekerjaan</th>
+                            <th scope="col">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                <tr>
+                          <td>Petani</td>
+                          <td>105</td>
+                        </tr>
+                                                <tr>
+                          <td>P N S</td>
+                          <td>14</td>
+                        </tr>
+                                                <tr>
+                          <td>Swasta</td>
+                          <td>57</td>
+                        </tr>
+                                                <tr>
+                          <td>Pedagang</td>
+                          <td>20</td>
+                        </tr>
+                                            </tbody>
+                </table>
+                </div>
+              </div>
+              <div class="col-lg-8 px-lg-5">
+                <div class="statistik-image-wrapper">
+                  
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">105</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/14/stat_pekerjaan/1702517373853.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Petani</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">14</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/25/stat_pekerjaan/17035205305386.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">P N S</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">57</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/25/stat_pekerjaan/17035205466711.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Swasta</div>
+                    </div>
+                                        <div class="statistik-image-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">20</div>
+                      <img class="mb-3" src="https://desa-laramo.sideku.id/storage/uploads/2023/12/25/stat_pekerjaan/17035205568312.png" style="height: 100px;object-fit: contain">
+                      <div class="statistik-image-text">Pedagang</div>
+                    </div>
+                                      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow-sm py-5 px-4 mb-5" style="background-color: #FFECEA; border-radius: 10px;">
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <div class="flex align-items-center">
+                  <img class="me-3" src="https://desa-laramo.sideku.id/assets/frontend/images/icons/dusun.svg" alt="" 
+                  style="width: 55px; filter: invert(0.16) sepia(1) saturate(55) hue-rotate(340deg);">
+                  <span class="fs-4" style="font-weight: 700;">Dusun</span>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="table-responsive">
+                  <table class="table table-hover bg-white shadow-sm">
+                    <thead>
+                        <tr class="text-white fw-bold shadow-sm" style="background-color: #E74C3C;">
+                            <th scope="col">Dusun</th>
+                            <th scope="col">Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                          <td>Dusun I</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>Dusun II</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>Dusun III</td>
+                          <td>0</td>
+                        </tr>
+                        <tr>
+                          <td>Dusun IV</td>
+                          <td>0</td>
+                        </tr>
+                                            </tbody>
+                </table>
+                </div>
+              </div>
+              <div class="col-lg-8 px-lg-5">
+                <div class="statistik-noimage-wrapper">
+                    
+                    <div class="statistik-noimage-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <div class="statistik-noimage-text">Dusun I</div>
+                    </div>
+                    <div class="statistik-noimage-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <div class="statistik-noimage-text">Dusun II</div>
+                    </div>
+                    <div class="statistik-noimage-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <div class="statistik-noimage-text">Dusun III</div>
+                    </div>
+                    <div class="statistik-noimage-item shadow bg-white py-4">
+                      <div class="fs-2 mb-3" style="font-weight: 700;">0</div>
+                      <div class="statistik-noimage-text">Dusun IV</div>
+                    </div>
+                                    </div>
+              </div>
+            </div>
+          </div>
+
     </section><!-- End Portfolio Details Section -->
 
 
