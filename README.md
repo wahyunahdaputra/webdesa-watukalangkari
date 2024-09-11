@@ -21,7 +21,7 @@ Website resmi dapat diakses di: **desa-watukalangkari.id**
 
 <table>
   <tr>
-    <td text-align="center">
+    <td align="center">
       <a href="https://github.com/wahyunahdaputra">
         <img src="https://github.com/wahyunahdaputra.png" width="50px;" alt="wahyunahdaputra"/>
         <br />
