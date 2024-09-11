@@ -15,7 +15,7 @@ Ini adalah repository untuk pengembangan website resmi **Desa Watukalangkari**, 
   
 ## Link Website
 
-Website resmi dapat diakses di: **desa-watukalangkari.id**
+Website resmi dapat diakses di: **https://desa-watukalangkari.id**
 
 ## Contributors
 
